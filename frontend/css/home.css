@@ -66,11 +66,12 @@ body {
 
 .dropdown-menu {
     display: none;
+    list-style: none;
 
-    /* 🔧 MAIN FIX */
     position: absolute;
-    top: 100%;          /* instead of fixed px */
-    left: 0;
+    top: 100%;
+    right: 0;        /* 🔥 REAL FIX */
+    left: auto;      /* 🔥 IMPORTANT */
     z-index: 9999;
 
     background: rgba(15,32,39,0.95);
@@ -78,6 +79,7 @@ body {
     border-radius: 16px;
     min-width: 180px;
 }
+
 
 .dropdown-menu li {
     padding: 10px;
