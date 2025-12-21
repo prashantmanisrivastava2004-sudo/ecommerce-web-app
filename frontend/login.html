@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login / Sign Up</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+
+<div class="form-container">
+
+    <!-- Logo / Title -->
+    <h1 class="logo">ShopEase</h1>
+    <p class="tagline">Welcome back, please login</p>
+
+    <!-- Toggle -->
+    <div class="tab-buttons">
+        <button class="tab-btn active" onclick="showLogin()">Login</button>
+        <button class="tab-btn" onclick="showSignup()">Sign Up</button>
+    </div>
+
+    <!-- LOGIN -->
+    <div class="form-box" id="loginForm">
+
+        <div class="input-group">
+            <input type="email" required>
+            <label>Email Address</label>
+        </div>
+
+        <div class="input-group password-box">
+            <input type="password" id="loginPass" required>
+            <label>Password</label>
+            <span onclick="togglePass('loginPass')">👁️</span>
+        </div>
+
+        <div class="options">
+            <label><input type="checkbox"> Remember me</label>
+            <a href="#">Forgot?</a>
+        </div>
+
+        <button class="btn">Login</button>
+
+        <div class="or">OR</div>
+
+        <button class="google-btn">
+            <img src="https://img.icons8.com/color/20/google-logo.png">
+            Continue with Google
+        </button>
+
+        <p class="security">🔒 Your data is securely encrypted</p>
+    </div>
+
+    <!-- SIGN UP -->
+    <div class="form-box hidden" id="signupForm">
+
+        <div class="input-group">
+            <input type="text" required>
+            <label>Username</label>
+        </div>
+
+        <div class="input-group">
+            <input type="email" required>
+            <label>Email Address</label>
+        </div>
+
+        <div class="input-group password-box">
+            <input type="password" id="signupPass" required>
+            <label>Password</label>
+            <span onclick="togglePass('signupPass')">👁️</span>
+        </div>
+
+        <button class="btn">Create Account</button>
+
+        <div class="or">OR</div>
+
+        <button class="google-btn">
+            <img src="https://img.icons8.com/color/20/google-logo.png">
+            Sign up with Google
+        </button>
+
+        <p class="security">🔒 Secure & private signup</p>
+    </div>
+
+</div>
+
+<script>
+function showLogin() {
+    loginForm.classList.remove("hidden");
+    signupForm.classList.add("hidden");
+    document.querySelectorAll(".tab-btn")[0].classList.add("active");
+    document.querySelectorAll(".tab-btn")[1].classList.remove("active");
+}
+
+function showSignup() {
+    signupForm.classList.remove("hidden");
+    loginForm.classList.add("hidden");
+    document.querySelectorAll(".tab-btn")[1].classList.add("active");
+    document.querySelectorAll(".tab-btn")[0].classList.remove("active");
+}
+
+function togglePass(id) {
+    const input = document.getElementById(id);
+    input.type = input.type === "password" ? "text" : "password";
+}
+</script>
+
+</body>
+</html>

@@ -1,18 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>ShopEase | Home</title>
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
 
-<div class="form-box">
-    <h2>Login</h2>
-    <input type="email" placeholder="Email">
-    <input type="password" placeholder="Password">
-    <button class="btn">Login</button>
-</div>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">ShopEase</div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search for products, brands and more">
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Cart 🛒</a></li>
+        <li class="dropdown">
+            <a href="#">Categories ▾</a>
+            <ul class="dropdown-menu">
+                <li>Grocery</li>
+                <li>Snacks</li>
+                <li>Beauty</li>
+                <li>Household</li>
+                <li>Electronics</li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<!-- HOME CONTENT -->
+<section class="home">
+
+    <!-- CATEGORY SECTION -->
+    <h2>Best Deals for You</h2>
+
+    <div class="products">
+
+        <!-- PRODUCT CARD -->
+        <div class="card">
+            <span class="discount">25% OFF</span>
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e17b">
+            <h3>Fresh Apples</h3>
+            <p class="price">₹120 <span>₹160</span></p>
+            <button class="cart-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <span class="discount">30% OFF</span>
+            <img src="https://images.unsplash.com/photo-1604908177522-0406dbeb2f37">
+            <h3>Potato Chips</h3>
+            <p class="price">₹70 <span>₹100</span></p>
+            <button class="cart-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <span class="discount">20% OFF</span>
+            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be">
+            <h3>Face Cream</h3>
+            <p class="price">₹299 <span>₹375</span></p>
+            <button class="cart-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <span class="discount">25% OFF</span>
+            <img src="https://images.unsplash.com/photo-1585386959984-a41552231693">
+            <h3>Detergent</h3>
+            <p class="price">₹180 <span>₹240</span></p>
+            <button class="cart-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <span class="discount">35% OFF</span>
+            <img src="https://images.unsplash.com/photo-1580894908360-8d98d13c3b3c">
+            <h3>Wireless Earbuds</h3>
+            <p class="price">₹1,999 <span>₹2,999</span></p>
+            <button class="cart-btn">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
 
 </body>
 </html>
-
