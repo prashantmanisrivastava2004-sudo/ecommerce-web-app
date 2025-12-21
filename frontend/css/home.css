@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0F2027, #203A43, #2C5364);
+    color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.45);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* SEARCH */
+.search-box input {
+    width: 300px;
+    padding: 12px 16px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.18);
+    color: #fff;
+}
+
+.search-box input::placeholder {
+    color: #CBD5E1;
+}
+
+/* LINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 26px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #22D3EE;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    background: rgba(15,32,39,0.95);
+    padding: 12px;
+    border-radius: 16px;
+    min-width: 180px;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background: linear-gradient(135deg, #8B5CF6, #22D3EE);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* HOME SECTION */
+.home {
+    padding: 40px;
+}
+
+.home h2 {
+    margin: 30px 0 16px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* PRODUCTS */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px;
+}
+
+/* CARD */
+.card {
+    background: rgba(255,255,255,0.14);
+    backdrop-filter: blur(18px);
+    border-radius: 22px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.45);
+    transition: 0.4s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.card h3 {
+    margin: 14px 0 6px;
+    font-size: 16px;
+}
+
+/* PRICE */
+.price {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.price span {
+    font-size: 13px;
+    color: #CBD5E1;
+    margin-left: 6px;
+    text-decoration: line-through;
+}
+
+/* DISCOUNT */
+.discount {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #8B5CF6, #22D3EE);
+}
