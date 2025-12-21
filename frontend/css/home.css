@@ -19,6 +19,10 @@ body {
     background: rgba(255,255,255,0.12);
     backdrop-filter: blur(18px);
     box-shadow: 0 15px 40px rgba(0,0,0,0.45);
+
+    /* 🔧 FIX */
+    position: relative;
+    z-index: 1000;
 }
 
 .logo {
@@ -57,14 +61,18 @@ body {
 
 /* DROPDOWN */
 .dropdown {
-    position: relative;
+    position: relative; /* already correct */
 }
 
 .dropdown-menu {
     display: none;
+
+    /* 🔧 MAIN FIX */
     position: absolute;
-    top: 36px;
+    top: 100%;          /* instead of fixed px */
     left: 0;
+    z-index: 9999;
+
     background: rgba(15,32,39,0.95);
     padding: 12px;
     border-radius: 16px;
