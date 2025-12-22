@@ -1,4 +1,3 @@
-// Show Login Form
 function showLogin() {
     document.getElementById("loginForm").classList.remove("hidden");
     document.getElementById("signupForm").classList.add("hidden");
@@ -8,7 +7,6 @@ function showLogin() {
     tabs[1].classList.remove("active");
 }
 
-// Show Signup Form
 function showSignup() {
     document.getElementById("signupForm").classList.remove("hidden");
     document.getElementById("loginForm").classList.add("hidden");
@@ -18,16 +16,22 @@ function showSignup() {
     tabs[0].classList.remove("active");
 }
 
-// Toggle Password Visibility
 function togglePass(id) {
     const input = document.getElementById(id);
     input.type = input.type === "password" ? "text" : "password";
 }
 
-// Login Redirect Logic
 function handleLogin() {
-    // (Optional) You can add validation here later
+    // Get input values
+    const email = document.querySelector('#loginForm input[type="email"]').value.trim();
+    const password = document.getElementById("loginPass").value.trim();
 
-    // Redirect to home page
+    // Validation
+    if (email === "" || password === "") {
+        alert("Please enter both email and password");
+        return; // stop execution
+    }
+
+    // If validation passes → redirect
     window.location.href = "index.html";
 }
