@@ -234,3 +234,19 @@ body::before{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+.google-btn {
+    background-color: #ffffff;
+    color: #444;
+    border: 1px solid #ddd;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.google-btn:hover {
+    background-color: #232f3e;
+}
+
