@@ -7,16 +7,32 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* ===== BODY BACKGROUND ===== */
 body{
-    background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    height: 100vh;
+
+    /* BACKGROUND IMAGE */
+    background-image: url("../images/bg_image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
 }
 
+/* ===== DARK OVERLAY ===== */
+body::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    z-index: 0;
+}
+
+/* ===== MAIN CONTAINER ===== */
 .container{
     background-color: #fff;
     border-radius: 30px;
@@ -26,8 +42,10 @@ body{
     width: 768px;
     max-width: 100%;
     min-height: 480px;
+    z-index: 1;
 }
 
+/* ===== TEXT ===== */
 .container p{
     font-size: 14px;
     line-height: 20px;
@@ -46,6 +64,7 @@ body{
     margin: 15px 0 10px;
 }
 
+/* ===== BUTTON ===== */
 .container button{
     background-color: #FF9900;
     color: #fff;
@@ -65,6 +84,7 @@ body{
     border-color: #fff;
 }
 
+/* ===== FORM ===== */
 .container form{
     background-color: #fff;
     display: flex;
@@ -86,6 +106,7 @@ body{
     outline: none;
 }
 
+/* ===== FORM CONTAINERS ===== */
 .form-container{
     position: absolute;
     top: 0;
@@ -102,6 +123,7 @@ body{
 .container.active .sign-in{
     transform: translateX(100%);
 }
+
 .title{
     text-align: center;
     margin-bottom: 20px;
@@ -132,6 +154,7 @@ body{
     }
 }
 
+/* ===== SOCIAL ICONS ===== */
 .social-icons{
     margin: 20px 0;
 }
@@ -147,6 +170,7 @@ body{
     height: 40px;
 }
 
+/* ===== TOGGLE SECTION ===== */
 .toggle-container{
     position: absolute;
     top: 0;
@@ -165,8 +189,6 @@ body{
 }
 
 .toggle{
-    background-color: #512da8;
-    height: 100%;
     background: linear-gradient(to right, #232f3e, #131921);
     color: #fff;
     position: relative;
@@ -192,7 +214,6 @@ body{
     padding: 0 30px;
     text-align: center;
     top: 0;
-    transform: translateX(0);
     transition: all 0.6s ease-in-out;
 }
 
@@ -206,7 +227,6 @@ body{
 
 .toggle-right{
     right: 0;
-    transform: translateX(0);
 }
 
 .container.active .toggle-right{
