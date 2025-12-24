@@ -9,11 +9,12 @@
 
 /* ===== BODY BACKGROUND ===== */
 body{
-    background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    min-height: 100vh;              /* IMPORTANT for centering */
+    margin: 0;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center;            /* vertical center */
+    justify-content: center;        /* horizontal center */
 
     /* BACKGROUND IMAGE */
     background-image: url("../images/bg_image.jpg");
@@ -24,12 +25,12 @@ body{
     position: relative;
 }
 
-/* ===== DARK OVERLAY ===== */
+/* ===== OPTIONAL OVERLAY (NO BLUR) ===== */
 body::before{
     content: "";
     position: absolute;
     inset: 0;
-    background: transparent;
+    background: transparent;        /* keep image clear */
     z-index: 0;
 }
 
