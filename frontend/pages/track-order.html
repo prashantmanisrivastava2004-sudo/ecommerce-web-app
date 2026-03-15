@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Track Your Order</title>
+
+<link rel="stylesheet" href="../css/track-order.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+
+<div class="logo">ShopEase</div>
+
+<div class="nav-links">
+<a href="home.html">Home</a>
+<a href="#">Orders</a>
+<a href="track-order.html">Track Order</a>
+</div>
+
+</div>
+
+
+<!-- TRACK ORDER BOX -->
+
+<div class="container">
+
+<h2>Track Your Order</h2>
+
+<div class="track-input">
+
+<input type="text" id="orderId" placeholder="Enter Order ID">
+
+<button onclick="trackOrder()">Track</button>
+
+</div>
+
+
+<!-- ORDER TIMELINE -->
+
+<div class="timeline" id="timeline">
+
+<div class="step">
+<div class="circle active"></div>
+<div class="status">Order Placed</div>
+</div>
+
+<div class="line"></div>
+
+<div class="step">
+<div class="circle active"></div>
+<div class="status">Packed</div>
+</div>
+
+<div class="line"></div>
+
+<div class="step">
+<div class="circle active"></div>
+<div class="status">Shipped</div>
+</div>
+
+<div class="line"></div>
+
+<div class="step">
+<div class="circle"></div>
+<div class="status">Out for Delivery</div>
+</div>
+
+<div class="line"></div>
+
+<div class="step">
+<div class="circle"></div>
+<div class="status">Delivered</div>
+</div>
+
+</div>
+
+</div>
+
+<script src="../js/track-order.js"></script>
+
+</body>
+</html>
