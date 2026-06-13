@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Cart</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">ShopEase</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="track-order.html">Track Order</a></li>
+        <li><a href="cart.html">Cart 🛒 <span id="cart-count" class="cart-badge">0</span></a></li>
+    </ul>
+</nav>
+
+<section class="home cart-page">
+    <div class="cart-layout">
+        <article class="cart-panel">
+            <div class="cart-panel-header">
+                <div>
+                    <p class="eyebrow">Shopping Cart</p>
+                    <h1>Your Cart</h1>
+                </div>
+                <span class="cart-chip">Secure Checkout</span>
+            </div>
+            <p id="cart-summary" class="cart-summary-text">0 item(s) in your cart.</p>
+            <div id="cart-items" class="cart-items"></div>
+        </article>
+
+        <aside class="cart-summary-card">
+            <h2>Order Summary</h2>
+            <div class="summary-row"><span>Items</span><strong id="summary-items">₹0</strong></div>
+            <div class="summary-row"><span>Delivery</span><strong id="summary-delivery">₹0</strong></div>
+            <div class="summary-row"><span>Discount</span><strong id="summary-discount">-₹0</strong></div>
+            <div class="summary-row total-row"><span>Total</span><strong id="summary-total">₹0</strong></div>
+
+            <div class="summary-note">Free delivery on orders above ₹999.</div>
+
+            <button class="cart-btn checkout-btn">Proceed to Checkout</button>
+
+            <div class="recent-section">
+                <h3>Recently Added</h3>
+                <div id="recent-item-card" class="recent-item-card"></div>
+            </div>
+        </aside>
+    </div>
+</section>
+
+<script src="../js/cart.js"></script>
+</body>
+</html>
