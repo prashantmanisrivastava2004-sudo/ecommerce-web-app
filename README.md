@@ -15,7 +15,7 @@ This project simulates a basic online shopping experience with product listings,
 ✔️ Remove Items from Cart
 ✔️ Dynamic Cart Total Calculation
 ✔️ Local Storage Support
-✔️ Mobile-Friendly Interface
+
 
 ---
 
