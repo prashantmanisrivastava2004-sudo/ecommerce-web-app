@@ -206,6 +206,99 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.25rem;
 }
+.best-deals,
+.why-shop,
+.testimonials,
+.site-footer {
+    padding: 2rem;
+}
+.deal-grid,
+.benefit-grid,
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+}
+.deal-card,
+.benefit-card,
+.testimonial-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+.deal-tag {
+    display: inline-flex;
+    margin-bottom: 1rem;
+    padding: 0.45rem 0.85rem;
+    background: #eef2ff;
+    color: #4338ca;
+    font-weight: 700;
+    border-radius: 999px;
+    font-size: 0.8rem;
+}
+.deal-card h3,
+.benefit-card h3,
+.testimonial-card span,
+.site-footer h3 {
+    margin-bottom: 0.8rem;
+    color: #111827;
+}
+.deal-card p,
+.benefit-card p,
+.testimonial-card p,
+.site-footer p {
+    color: #475569;
+    line-height: 1.75;
+}
+.benefit-card {
+    display: grid;
+    gap: 0.85rem;
+}
+.benefit-card i {
+    font-size: 1.5rem;
+    color: #ff9900;
+}
+.testimonial-card {
+    border: 1px solid #e5e7eb;
+}
+.testimonial-card p {
+    font-size: 1rem;
+    margin-bottom: 1.15rem;
+}
+.testimonial-card span {
+    color: #0f172a;
+    font-weight: 700;
+}
+.site-footer {
+    background: #111827;
+    color: #e2e8f0;
+    border-radius: 24px;
+    margin: 0 2rem 2rem;
+}
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.site-footer h3 {
+    color: #fff;
+}
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.footer-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 500;
+}
+.footer-links a:hover {
+    color: #fff;
+}
 .category-card {
     display: block;
     padding: 1.5rem;
@@ -518,6 +611,57 @@ body {
     border-radius: 10px;
     padding: 0.7rem;
     margin: 0.8rem 0 1rem;
+}
+
+@media (max-width: 980px) {
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 2rem 1.5rem 1.5rem;
+    }
+
+    .hero-highlights,
+    .deal-grid,
+    .benefit-grid,
+    .testimonial-grid,
+    .footer-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-inner {
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 720px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .search-box {
+        order: 3;
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-copy h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .site-footer {
+        margin: 0 1.5rem 1.5rem;
+    }
+}
 }
 
 @media (max-width: 980px) {
